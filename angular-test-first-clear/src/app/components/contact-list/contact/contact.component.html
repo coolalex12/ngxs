@@ -1,0 +1,24 @@
+<mat-card>
+  <mat-card-header>
+    <img mat-card-avatar src="{{ contact.avatarUrl }}" />
+    <mat-card-title> {{ contact.name }}</mat-card-title>
+    <mat-card-subtitle>{{ contact.jobTitle }}</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item>
+        <mat-icon mat-list-icon>phone</mat-icon>
+        <span>{{ contact.telephone }}</span>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon mat-list-icon>email</mat-icon>
+        <span>{{ contact.email }}</span>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon mat-list-icon>near_me</mat-icon>
+        <span>{{ contact.address }}</span>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

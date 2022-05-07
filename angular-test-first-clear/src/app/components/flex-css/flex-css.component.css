@@ -1,0 +1,24 @@
+/* Пришлось воспользоваться height и width для контейнера,
+ не смог обойтись только flex-свойствами */
+
+:host {
+   display: flex;
+   height: 50vh;
+   align-items: flex-start;
+}
+
+button:nth-child(odd) {
+    align-self: flex-end;
+}
+
+@media (max-width: 599px) { 
+    :host{
+        width: 80vw;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    button:nth-child(odd) {
+        align-self: flex-start;
+    }
+ }
